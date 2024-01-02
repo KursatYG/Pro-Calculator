@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+body{
+  background-color: rgba(3, 10, 27, 0.87);
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+  background-color: black;
+  padding: 20px 30px;
+  width: 360px;
+  border-radius:24px;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn{
+  padding: 15px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.nav-btn i{
+  font-size: 24px;
+  color: rgba(196, 196, 196, 0.363);
+}
+
+.nav-btn i.active{
+  color: rgb(192, 117, 4);
+}
+
+.display{
+  position: relative;
+height: 200px;
+display: flex;
+align-items: end;
+margin-bottom: 10px;
+
+}
+
+.display input{
+  all: unset;
+  width: 100%;
+  text-align: right;
+  font-size: 35px;
+  color: white;
+  cursor: default;
+  
+}
+
+.operations{
+  position: absolute;
+  gap: 5px;
+  text-align: end;
+  color: gray;
+  right: 0;
+  bottom: 3rem;
+  max-height: 150px;
+  overflow-y: auto;
+  cursor: grab;
+  user-select: none;
+  
+}
+
+.operations::-webkit-scrollbar{
+  display: none;
+}
+
+.results{
+  margin-top: 7px;
+}
+
+.buttons{
+  border-top: 1px solid rgba(128, 128, 128, 0.459);
+}
+
+.button-row:first-child input[type="button"]{
+  color: rgb(192, 117, 4);
+}
+
+.button-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-row :last-child{
+  color: rgb(192, 117, 4);
+}
+
+
+input[type="button"]{
+  background-color: black;
+  color: white;
+  width: 80px;
+  height: 60px;
+  font-size: 19px;
+  cursor: pointer;
+}

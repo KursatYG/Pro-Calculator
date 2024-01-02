@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculations</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <button class="nav-btn" id="calculator">
+          <i class="fa-solid fa-calculator active"></i>
+        </button>
+        <button class="nav-btn" id="calculations">
+          <i class="fa-solid fa-table"></i>
+        </button>
+        <button class="nav-btn" id="investment">
+          <i class="fa-solid fa-sack-dollar"></i>
+        </button>
+        <button class="nav-btn" id="past">
+          <i class="fa-solid fa-hourglass-end"></i>
+        </button>
+      </div>
+      <div class="display">
+        <div class="operations" id="operations">
+          <!-- <div>
+            <div class="past-transactions">56+6</div> 
+            <div class="result">=62</div>
+          </div> -->
+        </div>
+        <input type="text" id="displayInput" placeholder="0" />
+      </div>
+      <div class="buttons">
+        <div class="button-row">
+          <input type="button" value="AC" />
+          <input type="button" value="C" hidden/>
+          <input type="button" value="DEL" />
+          <input type="button" value="%" />
+          <input type="button" value="/" />
+        </div>
+        <div class="button-row">
+          <input type="button" value="7" />
+          <input type="button" value="8" />
+          <input type="button" value="9" />
+          <input type="button" value="*" />
+        </div>
+        <div class="button-row">
+          <input type="button" value="4" />
+          <input type="button" value="5" />
+          <input type="button" value="6" />
+          <input type="button" value="-" />
+        </div>
+        <div class="button-row">
+          <input type="button" value="1" />
+          <input type="button" value="2" />
+          <input type="button" value="3" />
+          <input type="button" value="+" />
+        </div>
+        <div class="button-row">
+          <input type="button" value="0" />
+          <input type="button" value="00" />
+          <input type="button" value="." />
+          <input type="button" value="=" />
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
